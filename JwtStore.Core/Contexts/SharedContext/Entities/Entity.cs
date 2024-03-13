@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JwtStore.Core.SharedContext.Entities
+namespace JwtStore.Core.Contexts.SharedContext.Entities
 {
     public abstract class Entity
     {

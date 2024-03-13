@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtStore.Core", "JwtStore.Core\JwtStore.Core.csproj", "{1CD1CD35-8451-4EBF-80F3-D2F997D032E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtStore.Core", "JwtStore.Core\JwtStore.Core.csproj", "{1CD1CD35-8451-4EBF-80F3-D2F997D032E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtStore.Infra", "JwtStore.Infra\JwtStore.Infra.csproj", "{45E5C9F7-D40A-4E6F-8B2C-D065443476F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtStore.Infra", "JwtStore.Infra\JwtStore.Infra.csproj", "{45E5C9F7-D40A-4E6F-8B2C-D065443476F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtStore.Api", "JwtStore.Api\JwtStore.Api.csproj", "{D645C86F-B851-4881-B459-B0772A9F87F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtStore.API", "JwtStore.API\JwtStore.API.csproj", "{F84CB3AA-4AF4-481F-BB1B-A3474C32E07C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{45E5C9F7-D40A-4E6F-8B2C-D065443476F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45E5C9F7-D40A-4E6F-8B2C-D065443476F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45E5C9F7-D40A-4E6F-8B2C-D065443476F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D645C86F-B851-4881-B459-B0772A9F87F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D645C86F-B851-4881-B459-B0772A9F87F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D645C86F-B851-4881-B459-B0772A9F87F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D645C86F-B851-4881-B459-B0772A9F87F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84CB3AA-4AF4-481F-BB1B-A3474C32E07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84CB3AA-4AF4-481F-BB1B-A3474C32E07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84CB3AA-4AF4-481F-BB1B-A3474C32E07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84CB3AA-4AF4-481F-BB1B-A3474C32E07C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

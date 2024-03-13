@@ -1,15 +1,15 @@
-﻿using JwtStore.Core.SharedContext.ValueObjects;
+﻿using JwtStore.Core.Contexts.SharedContext.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JwtStore.Core.AccountContext.ValueObjects
+namespace JwtStore.Core.Contexts.AccountContext.ValueObjects
 {
     public class Verification : ValueObject
     {
-        protected Verification() { }
+        public Verification() { }
         public string Code { get; } = Guid.NewGuid().ToString("N")[..6].ToUpper();
         public DateTime? ExpiresAt { get; private set; } = DateTime.UtcNow.AddMinutes(5);
         public DateTime? VerifiedAt { get; private set; } = null;
@@ -20,7 +20,7 @@ namespace JwtStore.Core.AccountContext.ValueObjects
 
             if (DateTime.UtcNow > ExpiresAt) { throw new Exception("Código expirado."); }
 
-            if ( string.Equals(Code.Trim(), code.Trim(), StringComparison.CurrentCultureIgnoreCase) is false) { throw new Exception("Código informado inválido!"); }
+            if (string.Equals(Code.Trim(), code.Trim(), StringComparison.CurrentCultureIgnoreCase) is false) { throw new Exception("Código informado inválido!"); }
         }
     }
 }
