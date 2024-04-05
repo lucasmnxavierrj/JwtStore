@@ -22,7 +22,7 @@ namespace JwtStore.Infra.Contexts.AccountContext.UseCases.Create
         public async Task<bool> AnyAsync(string email, CancellationToken cancellationToken)
             => await _context.Users
                 .AsNoTracking()
-                .AnyAsync(x => x.Email.ToString().ToUpper() == email.ToUpper().Trim(), cancellationToken);
+                .AnyAsync(x => x.Email.Address.ToUpper() == email.ToUpper().Trim(), cancellationToken);
 
         public async Task SaveAsync(User user, CancellationToken cancellationToken)
         {

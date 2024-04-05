@@ -30,7 +30,7 @@ namespace JwtStore.Core.Contexts.AccountContext.ValueObjects
 
         #region public properties
         public string Address { get; }
-        public Verification Verification { get; private set; }
+        public Verification Verification { get; private set; } = new();
         #endregion
 
         #region public methods
